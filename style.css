@@ -1,0 +1,143 @@
+/* СОВРЕМЕННЫЙ/ЯРКИЙ ДИЗАЙН */
+:root {
+  --main-bg: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+  --panel-bg: #fff;
+  --accent: #ef476f;
+  --accent2: #ffd166;
+  --border-radius: 18px;
+  --profile-shadow: 0 2px 16px rgba(239,71,111,0.08); /* тень для карточек */
+  --padding: 1.5rem;
+  --font: 'Segoe UI', 'Arial', sans-serif;
+}
+
+html, body {
+  min-height: 100%;
+  margin: 0;
+  font-family: var(--font);
+  background: var(--main-bg);
+}
+
+#app {
+  max-width: 750px;
+  margin: 48px auto 0 auto;
+  box-sizing: border-box;
+}
+
+.panel {
+  background: var(--panel-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--profile-shadow);
+  margin-bottom: var(--padding);
+  padding: var(--padding);
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.75rem;
+  color: var(--accent);
+}
+
+.center {
+  text-align: center;
+}
+
+button, .emoji-btn {
+  background: var(--accent2);
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  padding: 9px 18px;
+  margin: 4px 3px;
+  font-size: 1.15rem;
+  transition: filter 0.2s;
+  cursor: pointer;
+  font-family: inherit;
+}
+button:hover, .emoji-btn:hover {
+  filter: brightness(1.13) saturate(1.2);
+}
+input, textarea, select {
+  border: 1px solid #ffc;
+  border-radius: 10px;
+  padding: 9px 14px;
+  width: 100%;
+  margin: 7px 0 14px 0;
+  font-size: 1.12rem;
+  font-family: inherit;
+  background: #f7f7ff;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  background: var(--panel-bg);
+  border-radius: var(--border-radius);
+  box-shadow: var(--profile-shadow);
+  margin-bottom: var(--padding);
+  padding: var(--padding);
+}
+.profile-emoji {
+  font-size: 3.2rem;
+  border-radius: 50%;
+  border: 2px dashed var(--accent2);
+  background: #fffbe6;
+  padding: 0.45em 0.48em;
+}
+.profile-info {
+  flex: 1;
+}
+.profile-nick {
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: var(--accent);
+}
+.profile-desc {
+  font-size: 1.1rem;
+  color: #222;
+}
+.emoji-list {
+  margin-top: 0.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  background: #fafaff;
+  padding: 0.8rem 0.8rem 0.3rem 0.8rem;
+  border-radius: 9px;
+}
+.post {
+  background: #fffffc;
+  border-left: 7px solid var(--accent2);
+  border-radius: 13px;
+  margin: 0.6rem 0;
+  padding: 0.9rem 1.35rem;
+  box-shadow: 0 1px 5px rgba(239,71,111,0.07);
+}
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  font-size: 1.16rem;
+  color: var(--accent);
+  font-weight: 500;
+}
+.post-text {
+  font-size: 1.12rem;
+  color: #111;
+  margin-top: 0.39rem;
+}
+.news-list {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 11px;
+}
+::-webkit-scrollbar-thumb {
+  background: #ffe5a1;
+  border-radius: 13px;
+  border: 2px solid #fffbe6;
+}
